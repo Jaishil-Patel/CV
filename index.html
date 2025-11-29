@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jaishil Patel — CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#hobbies">Hobbies</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div class="hero-left">
+        <div class="hero-top">
+          <span class="hero-avatar-wrap">
+            <img src="avatar.jpg" alt="Jaishil Patel" class="hero-avatar" />
+          </span>
+
+          <div>
+            <h1 class="hero-title">I'm <strong>Jaishil Patel</strong></h1>
+            <p class="hero-sub">Software developer & AI enthusiast building clean, performant products with a focus on user experience and modern web tech.</p>
+          </div>
+        </div>
+
+        <div class="hero-ctas">
+          <a id="contactBtn"  class="btn solid">Contact me</a>
+          <a id="downloadBtn" href="CV.pdf" download="CV.pdf" class="btn solid"><i class="fa fa-download"></i> Download CV</a>
+        </div>
+
+        <div class="hero-contact-info">
+          <a href="mailto:jaishilpatel1105@gmail.com"><i class="fa fa-envelope"></i> jaishilpatel1105@gmail.com</a>
+          <a href="tel:+27646572021"><i class="fa fa-phone"></i> +27 64 657 2021</a>
+        </div>
+          <div class="socials">
+          
+              <a aria-label="GitHub — https://github.com/Jaishil-Patel" href="https://github.com/Jaishil-Patel" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+                <span class="social-label">GitHub</span>
+              </a>
+              <a aria-label="LinkedIn — https://www.linkedin.com/in/jaishil-patel-07766a320/" href="https://www.linkedin.com/in/jaishil-patel-07766a320/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+                <span class="social-label">LinkedIn</span>
+              </a>
+
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <a id="about"></a>
+      <section class="card about">
+        <h2>I small extract about me :)</h2>
+        <p>
+          I am a triple major BSc Computer Science graduate with my third major being information systems. I have a strong foundation in software development and machine learning. I greatly enjoy building intelligent, scalable, and impactful solutions. I bring a proactive mindset, a fast and determined learning mindset, and hands-on experience in developing web and mobile applications. I am currently seeking an entry-level role in AI, software development, or data-driven technologies where I can grow and contribute from day one. Beyond academics, I spend my time as an active member of BAPS charities and taking walks and working out.
+        </p>
+      </section>
+      <section id="projects" class="card projects">
+    <h2>Selected Projects</h2>
+    <article class="project">
+        <h3>RaceIQ – F1 stat tracker (Has won project of the year)</h3>
+        <p class="meta">TypeScript, React + Vite, NestJS, Supabase (PostgreSQL)</p>
+        <p class="project-intro">A full-stack F1 stats dashboard built to be fast, visual and deeply insightful.</p>
+        <ul class="project-points">
+          <li>Developed a full-stack F1 statistics tracker with 25 years of statistics of both teams and drivers presented in an intuitive and aesthetic way.</li>
+          <li>Implemented a feature that compares metrics, with varying weightings, of drivers and teams.</li>
+          <li>Rendered 3D racetracks onto an HTML canvas for interactive visualization.</li>
+          <li>Applied rigorous data cleaning and analysis to ensure accurate, but fast data retrieval (using materialized views).</li>
+          <li>•	Used materialized views to reduce loading time by 40%</li>
+        </ul>
+        <div class="project-actions">
+          <a class="btn ghost" href="https://race-iq.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open RaceIQ website">Have a look at the website</a>
+        </div>
+    </article>
+
+    <article class="project">
+        <h3>HoodGoods – Web Application for Local Artisans</h3>
+        <p class="meta">React + Vite, NestJS, Supabase (PostgreSQL), Jest</p>
+
+        <p class="project-intro">An e‑commerce platform focused on helping local artisans reach customers with a smooth storefront and admin tools.</p>
+        <ul class="project-points">
+          <li>Designed and implemented a full-stack e-commerce web app to help small-scale artisans sell handcrafted goods.</li>
+          <li>Developed user authentication system (Auth0), shopping cart functionality, and product search filters.</li>
+          <li>Integrated backend API with Supabase to manage product listings and user profiles.</li>
+          <li>Focused on user-friendly UI/UX with responsive layouts for mobile devices.</li>
+        </ul>
+    </article>
+
+    <article class="project">
+        <h3>EduForum – Educational Discussion Android App (Reddit Clone)</h3>
+        <p class="meta">Java, LAMP, Android Studio</p>
+
+        <p class="project-intro">A mobile-first Android discussion app built to help students ask questions and share knowledge.</p>
+        <ul class="project-points">
+          <li>Created a community-based platform where students can share academic content, post questions, and engage in topic-based discussions.</li>
+          <li>Implemented post creation, upvoting, commenting, and user profiles using Wits Lamp server</li>
+          <li>Practiced unit testing and A/B testing to ensure code stability, including edge cases for user input validation and data syncing.</li>
+          <li>Gained hands-on experience with real-time database design and integration.</li>
+        </ul>
+    </article>
+
+    <article class="project">
+        <h3>MeetMyProf – Student Consultation Booking App</h3>
+        <p class="meta">Java, LAMP, Android Studio</p>
+
+        <p class="project-intro">An Android appointment-booking app to streamline consultations between students and professors.</p>
+        <ul class="project-points">
+          <li>Developed an appointment scheduling Android app to improve professor-student consultations.</li>
+          <li>Enabled dynamic time slot selection, booking confirmations, and notifications.</li>
+          <li>Implemented input validation, calendar syncing, and simple UI navigation for intuitive usability.</li>
+        </ul>
+    </article>
+
+    <article class="project">
+        <h3>Aperture Protocol – Escape room game (Has won Game of the year)</h3>
+        <p class="meta">JavaScript, Three.js, HTML & CSS, Blender</p>
+
+        <p class="project-intro">An award-winning escape-room style 3D game with hand-crafted levels and optimized performance.</p>
+        <ul class="project-points">
+          <li>Implemented various textures and shaders like Phong and Lambert shading.</li>
+          <li>Comprehensive story design to ensure cohesion and fun play.</li>
+          <li>Serval performance optimization methods such as lazy loading and Occlusion Culling to ensure you can run on even the weakest systems.</li>
+        </ul>
+        <div class="project-actions">
+          <a class="btn ghost" href="https://lamp.ms.wits.ac.za/home/sonlygames/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open Aperture Protocol game">Try out the game!</a>
+        </div>
+    </article>
+    </section>
+
+
+      <section id="skills" class="card skills-grid">
+        <h2>Skills & Tools</h2>
+        <div class="grid">
+          <div>
+            <h4>Programming</h4>
+            <p>Python, Java, C++, C#, JavaScript, TypeScript, PHP, SQL</p>
+          </div>
+          <div>
+            <h4>Frontend / Backend</h4>
+            <p>React, Vite, Node.js, NestJS, Android Studio, Supabase</p>
+          </div>
+          <div>
+            <h4>AI & Data</h4>
+            <p>NumPy, Pandas, Scikit-learn, TensorFlow, Data Analysis</p>
+          </div>
+          <div>
+            <h4>Tools</h4>
+            <p>VS Code, Git, Jest, Azure, Auth0, REST APIs</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="card footer-card">
+        <h2>About working with me and my soft skills</h2>
+        <p class="muted">
+          I love to build reliable software that
+          scales and is a joy to use and I am willing to make as many confee as I need to.
+        </p>
+
+        <div class="chips">
+          <span>Fast learner</span>
+          <span>Analytical thinker</span>
+          <span>Team player</span>
+          <span>Strong communicator</span>
+          <span>Problem-solving</span>
+          <span>Adaptable</span>
+          <span>Detail-oriented</span>
+          <span>Time management</span>
+        </div>
+
+      </section>
+      <section id="education" class="card education">
+        <h2>Education</h2>
+        <p><strong>University of the Witwatersrand</strong> — BSc Computer Science (Feb 2021 – Present)</p>
+        <p><strong>Lenasia Secondary School</strong> — Top 5 in school (5 distinctions)</p>
+        <p>Alibaba Cloud Engineer Certificate</p>
+      </section>
+
+      <section id="hobbies" class="card hobbies">
+        <h2>Hobbies & Interests</h2>
+        <p>I enjoy activities that keep me active, social, and curious. A few of the things I love:</p>
+
+        <div class="hobby-grid">
+          <div class="hobby">
+            <i class="fa fa-dumbbell" aria-hidden="true"></i>
+            <div>
+              <strong>Calisthenics</strong>
+              <div class="muted small-note">Bodyweight training & mobility</div>
+            </div>
+          </div>
+
+          <div class="hobby">
+            <i class="fa fa-tree" aria-hidden="true"></i>
+            <div>
+              <strong>Park walks</strong>
+              <div class="muted small-note">Exploring outdoors, clearing my head</div>
+            </div>
+          </div>
+          <div class="hobby">
+            <i class="fa fa-hands-helping" aria-hidden="true"></i>
+            <div>
+              <strong>Youth coordinator — BAPS</strong>
+              <div class="muted small-note">Coordinating activities and mentoring youth groups</div>
+            </div>
+          </div>
+          <div class="hobby">
+            <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+            <div>
+              <strong>F1</strong>
+              <div class="muted small-note">Following races, stats & data</div>
+            </div>
+          </div>
+          <div class="hobby">
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+            <div>
+              <strong>Gaming</strong>
+              <div class="muted small-note">Casual + competitive</div>
+            </div>
+          </div>
+
+
+
+          <div class="hobby">
+            <i class="fa fa-futbol" aria-hidden="true"></i>
+            <div>
+              <strong>Soccer</strong>
+              <div class="muted small-note">Playing casually with friends</div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    document.documentElement.style.scrollBehavior = 'smooth';
+  </script>
+  <button id="backToTop" class="back-to-top" aria-label="Scroll to top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <script>
+    (function () {
+      const btn = document.getElementById('backToTop');
+      const threshold = 200;
+      const showClass = 'show';
+
+      function onScroll() {
+        if (window.scrollY > threshold) btn.classList.add(showClass);
+        else btn.classList.remove(showClass);
+      }
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    })();
+  </script>
+
+  <script>
+    // highlight email & phone briefly when contact button is clicked
+    (function(){
+      const contactBtn = document.getElementById('contactBtn');
+      const contactAnchors = document.querySelectorAll('.hero-contact-info a');
+      if(!contactBtn || contactAnchors.length === 0) return;
+
+      contactBtn.addEventListener('click', (e) => {
+        // highlight both anchors visually for a short time
+        contactAnchors.forEach(a => a.classList.add('highlight'));
+        setTimeout(() => contactAnchors.forEach(a => a.classList.remove('highlight')), 1800);
+        // let mailto proceed naturally (do not preventDefault)
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      const buttons = Array.from(document.querySelectorAll('.btn'));
+      if ('ontouchstart' in window || window.matchMedia('(max-width:700px)').matches) return;
+      buttons.forEach((btn) => {
+        function pointerMove(e){
+          const rect = btn.getBoundingClientRect();
+          const px = (e.clientX - rect.left) / rect.width - 0.5; 
+          const py = (e.clientY - rect.top) / rect.height - 0.5;
+          const tiltX = (py * -1) * 6;
+          const tiltY = (px) * 10; 
+          btn.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateZ(6px)`;
+          btn.style.boxShadow = '0 18px 60px rgba(0,0,0,0.55)';
+        }
+
+        function pointerLeave(){
+          btn.style.transform = '';
+          btn.style.boxShadow = '';
+        }
+
+        btn.addEventListener('pointermove', pointerMove);
+        btn.addEventListener('pointerleave', pointerLeave);
+        btn.addEventListener('pointerdown', () => btn.style.transform += ' scale(0.99)');
+        btn.addEventListener('pointerup', () => btn.style.transform = '');
+      });
+    })();
+  </script>
+</body>
+</html>

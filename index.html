@@ -279,17 +279,14 @@
   </script>
 
   <script>
-    // highlight email & phone briefly when contact button is clicked
     (function(){
       const contactBtn = document.getElementById('contactBtn');
       const contactAnchors = document.querySelectorAll('.hero-contact-info a');
       if(!contactBtn || contactAnchors.length === 0) return;
 
       contactBtn.addEventListener('click', (e) => {
-        // highlight both anchors visually for a short time
         contactAnchors.forEach(a => a.classList.add('highlight'));
         setTimeout(() => contactAnchors.forEach(a => a.classList.remove('highlight')), 1800);
-        // let mailto proceed naturally (do not preventDefault)
       });
     })();
   </script>
@@ -319,6 +316,58 @@
         btn.addEventListener('pointerdown', () => btn.style.transform += ' scale(0.99)');
         btn.addEventListener('pointerup', () => btn.style.transform = '');
       });
+    })();
+  </script>
+  <script>
+    (function(){
+      if ('ontouchstart' in window || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      const root = document.documentElement;
+      const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+      let target = { x: 50, y: 50 };
+      let current = { x: 50, y: 50 };
+
+      function onPointerMove(e){
+        const w = window.innerWidth || document.documentElement.clientWidth;
+        const h = window.innerHeight || document.documentElement.clientHeight;
+        const x = clamp((e.clientX / w) * 100, 0, 100);
+        const y = clamp((e.clientY / h) * 100, 0, 100);
+        target.x = x;
+        target.y = y;
+      }
+
+      function onLeave(){ target.x = 50; target.y = 50; }
+
+      window.addEventListener('pointermove', onPointerMove, { passive: true });
+      window.addEventListener('pointerleave', onLeave);
+
+      const lerp = (a, b, t) => a + (b - a) * t;
+
+      function updateVars(){
+        current.x = lerp(current.x, target.x, 0.06);
+        current.y = lerp(current.y, target.y, 0.06);
+        const bg1x = clamp(current.x * 0.45 + 12, 0, 100).toFixed(2) + '%';
+        const bg1y = clamp(current.y * 0.45 + 28, 0, 100).toFixed(2) + '%';
+        const bg2x = clamp(current.x * 0.55 + 8, 0, 100).toFixed(2) + '%';
+        const bg2y = clamp(current.y * 0.35 + 12, 0, 100).toFixed(2) + '%';
+        const bg3x = clamp(100 - current.x * 0.35, 0, 100).toFixed(2) + '%';
+        const bg3y = clamp(current.y * 0.6 + 6, 0, 100).toFixed(2) + '%';
+
+        root.style.setProperty('--bg1-x', bg1x);
+        root.style.setProperty('--bg1-y', bg1y);
+        root.style.setProperty('--bg2-x', bg2x);
+        root.style.setProperty('--bg2-y', bg2y);
+        root.style.setProperty('--bg3-x', bg3x);
+        root.style.setProperty('--bg3-y', bg3y);
+        const mouseX = current.x.toFixed(2) + '%';
+        const mouseY = current.y.toFixed(2) + '%';
+        root.style.setProperty('--mouse-x', mouseX);
+        root.style.setProperty('--mouse-y', mouseY);
+
+        requestAnimationFrame(updateVars);
+      }
+
+      updateVars();
     })();
   </script>
 </body>
